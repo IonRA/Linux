@@ -382,6 +382,13 @@ int fastMatProd(const char* fMat1, const char* fMat2, const char* prod)
             }
         }
     }
+    
+    for (j = 0; j < rowNum2; ++j)
+        free(mat2[j]);
+
+    free(mat2);
+
+    free(valuesMat1);
 
     return SUCCES;
 }
