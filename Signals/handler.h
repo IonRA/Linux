@@ -3,5 +3,4 @@
 
 void handle_sig_talk(int signum);
 
-
 #endif
