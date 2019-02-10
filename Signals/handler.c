@@ -1,6 +1,6 @@
-#include "handler.h"
 #include <signal.h>
 #include <unistd.h>
+#include "handler.h"
 
 void handle_sig_talk(int signum)
 {
