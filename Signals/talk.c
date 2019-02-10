@@ -9,7 +9,6 @@
 int main()
 {
     int sig = 1;
-
     int sig_no = 0;
 
     while (sig_no != 28)
@@ -22,9 +21,6 @@ int main()
 
         ++sig;
     }
-
-    for (int sig = 1; sig < 27; ++sig)
-        signal(sig, handle_sig_talk);
 
     __pid_t pid = getpid();
 
