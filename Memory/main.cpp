@@ -78,13 +78,13 @@ int main(int argc, char** argv) {
     }
 
     //you need to pass the session file address as arg from cmd line in order to join in the talking session
-//    if (argc != 2) {
-//        finalizeOnError(
-//                "You can't join the talking session!\nErr: Checkout the path of the file session!\n"
-//                );
-//    }
+    if (argc != 2) {
+        finalizeOnError(
+                "You can't join the talking session!\nErr: Checkout the path of the file session!\n"
+                );
+    }
 
-    char* session_path =  "/home/ion/CLionProjects/talking_session/assets/session.txt";//argv[1];
+    char* session_path =  argv[1];
 
     int session_file_descriptor = open(session_path, O_RDWR | O_CREAT, S_IRUSR | S_IWUSR);
 
